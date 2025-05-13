@@ -1,0 +1,127 @@
+:root {
+  --greeting-card-bg: hsl(272, 67%, 11%);
+  --message-bg: hsl(218, 92%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 1rem 0;
+  max-width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  transition: max-width 3s ease-in-out;
+}
+
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--greeting-card-bg);
+  font-family: "Tuffy", sans-serif;
+}
+
+p {
+  margin: 0.7rem 0;
+}
+
+.white-text {
+  color: #fff;
+}
+
+#hero-section,
+#bg-changer {
+  background-color: var(--greeting-card-bg);
+  border-radius: 1rem 0;
+  box-shadow: 0 5px 5px #000;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  border: 1.5px solid var(--greeting-card-bg);
+  border-radius: 0.5rem;
+  color: var(--greeting-card-bg);
+  padding: 0.5rem 1rem;
+}
+
+.name-submit-btn {
+  background-color: var(--greeting-card-bg);
+  color: #fff;
+}
+
+.greeting-msg {
+  /* width: 100%; */
+  background-color: var(--message-bg);
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
+.name-submit-btn,
+.bg-changer-btn {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.bg-changer-btn {
+  background-color: #fff;
+  color: var(--greeting-card-bg);
+}
+
+.bg-transition {
+  transition: background-color 0.5s ease-in-out;
+}
+
+footer {
+  background-color: var(--greeting-card-bg);
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 50%;
+  }
+}

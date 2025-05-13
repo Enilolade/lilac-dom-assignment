@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS: DOM Assignment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section id="hero-section">
+          <h1 class="white-text">Hi, Welcome to this page</h1>
+          <p>
+            This fun little website greets you by name and gives the background
+            a fresh splash of color every time you click the button.
+            <span class="white-text"> Shall we begin? </span>
+          </p>
+        </section>
+
+        <section id="greeting-section">
+          <div class="greeting-request">
+            <h2>Personalised Greeting Board</h2>
+            <p>Type your name in the input field below and get your greeting</p>
+            <form class="name-form" action="#" method="get">
+              <label for="client-name">What's your name?</label>
+              <input type="text" id="client-name" name="client-name" required />
+              <button class="name-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <div id="greeting-card"></div>
+        </section>
+        <section id="bg-changer">
+          <div>
+            <h2 class="white-text">Change Background Colour</h2>
+            <p>
+              Click the button below to change the background color of this
+              section.
+            </p>
+            <button class="bg-changer-btn">Change Background Color</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Coded by Enilolade</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
